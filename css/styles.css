@@ -1,3 +1,5 @@
+/* СТИЛИ ДОКУМЕНТА  */
+
 body {
   background-color: #202124;
   color: #dfdfdf;
@@ -5,9 +7,16 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+a,
+ul,
+li {
   padding: 0;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -55,14 +64,19 @@ ul {
 
 .nav-header {
   display: flex;
+  margin-left: 100px;
 }
 
 .nav-header-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
   align-items: center;
 }
 .nav-header-item {
   position: relative;
+  /* outline: 2px solid tomato; */
 }
 
 .nav-header-icon {
@@ -85,20 +99,37 @@ ul {
   background-color: #505154;
 }
 
-.nav-header-icon:hover,
-.submenu {
-  /* display: inline-block; */
-}
-
 .submenu {
   position: absolute;
   left: 0;
   top: 100%;
-  width: 100%;
+  /* width: 100%; */
   margin: 0;
   list-style: none;
-  padding: 10px;
-  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  background-color: #303134;
+  color: #000;
+  display: none;
+}
+
+.submenu-link {
+  /* color: #ffd100; */
+
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 4px 10px;
+  color: rgb(144, 217, 226);
+  transition-duration: 250ms;
+}
+
+.submenu-link:hover {
+  background-color: #505154;
+}
+
+.nav-header-item:hover .submenu {
+  display: block;
 }
 
 /* ########################### */
