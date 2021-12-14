@@ -1,0 +1,250 @@
+body {
+  background-color: #202124;
+  color: #dfdfdf;
+}
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* -----------     Ш А П К А     ------------ */
+
+.header {
+  display: flex;
+  margin-bottom: 0;
+  min-height: 80px;
+  border-bottom: 3px solid #575757;
+}
+
+.container-header {
+  display: flex;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  line-height: 1.142;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #dfdfdf;
+}
+
+.header-logo > span {
+  color: rgb(197, 103, 27);
+}
+
+/* -------- Н А В И Г А Ц И Я -------- */
+
+.nav-header {
+  display: flex;
+}
+
+.nav-header-list {
+  display: flex;
+  align-items: center;
+}
+.nav-header-item {
+  position: relative;
+}
+
+.nav-header-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #303134;
+  width: 52px;
+  height: 52px;
+  transition-duration: 250ms;
+}
+
+.nav-header-icon:hover {
+  background-color: #505154;
+}
+
+.nav-header-icon:hover,
+.submenu {
+  /* display: inline-block; */
+}
+
+.submenu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* ########################### */
+/* наведение на иконки классов */
+/* ########################### */
+
+.nav-header-priest::before {
+  position: absolute;
+  content: '';
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  width: 36px;
+  height: 36px;
+  background-image: url('../class-icons/priest.jpg');
+  margin-right: 16px;
+}
+
+.nav-header-mage::before {
+  position: absolute;
+  content: '';
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  width: 36px;
+  height: 36px;
+  background-image: url('../class-icons/mage.jpg');
+  margin-right: 16px;
+}
+
+.nav-header-warlock::before {
+  position: absolute;
+  content: '';
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  width: 36px;
+  height: 36px;
+  background-image: url('../class-icons/warlock.jpg');
+  margin-right: 16px;
+}
+
+.nav-header-dh::before {
+  position: absolute;
+  content: '';
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  width: 36px;
+  height: 36px;
+  background-image: url('../class-icons/demonhunter.jpg');
+  margin-right: 16px;
+}
+
+.nav-header-druid::before {
+  position: absolute;
+  content: '';
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  width: 36px;
+  height: 36px;
+  background-image: url('../class-icons/druid.jpg');
+  margin-right: 16px;
+}
+
+.nav-header-monk::before {
+  position: absolute;
+  content: '';
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  width: 36px;
+  height: 36px;
+  background-image: url('../class-icons/monk.jpg');
+  margin-right: 16px;
+}
+
+.nav-header-rogue::before {
+  position: absolute;
+  content: '';
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  width: 36px;
+  height: 36px;
+  background-image: url('../class-icons/rogue.jpg');
+  margin-right: 16px;
+}
+
+.nav-header-hunter::before {
+  position: absolute;
+  content: '';
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  width: 36px;
+  height: 36px;
+  background-image: url('../class-icons/hunter.jpg');
+  margin-right: 16px;
+}
+
+.nav-header-shaman::before {
+  position: absolute;
+  content: '';
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  width: 36px;
+  height: 36px;
+  background-image: url('../class-icons/shaman.jpg');
+  margin-right: 16px;
+}
+
+.nav-header-dk::before {
+  position: absolute;
+  content: '';
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  width: 36px;
+  height: 36px;
+  background-image: url('../class-icons/deathknight.jpg');
+  margin-right: 16px;
+}
+
+.nav-header-paladin::before {
+  position: absolute;
+  content: '';
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  width: 36px;
+  height: 36px;
+  background-image: url('../class-icons/paladin.jpg');
+  margin-right: 16px;
+}
+
+.nav-header-warrior::before {
+  position: absolute;
+  content: '';
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  width: 36px;
+  height: 36px;
+  background-image: url('../class-icons/warrior.jpg');
+  margin-right: 16px;
+}
